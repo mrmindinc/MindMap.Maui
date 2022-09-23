@@ -33,6 +33,7 @@
 		<Company>Mr.Mind</Company>
 		<Product>A.I.CompanionDoll</Product>
 		<Copyright>Copyright ⓒ 2022, Mr.Mind Corp.</Copyright>
+		<DefaultLanguage>ko</DefaultLanguage>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
@@ -55,6 +56,10 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\MindMap.NET6\Model.December.2021\Model.December.2021.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
